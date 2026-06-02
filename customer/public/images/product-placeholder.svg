@@ -1,0 +1,8 @@
+<!-- This is a placeholder SVG for product images -->
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" fill="#f0f0f0"/>
+  <rect x="60" y="40" width="80" height="120" fill="#d1d1d1"/>
+  <rect x="80" y="70" width="40" height="40" fill="#f0f0f0"/>
+  <rect x="75" y="120" width="50" height="10" fill="#f0f0f0"/>
+  <rect x="75" y="135" width="50" height="10" fill="#f0f0f0"/>
+</svg> 

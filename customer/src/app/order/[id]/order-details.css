@@ -1,0 +1,67 @@
+/* Custom styles for order details page */
+
+/* Improve text contrast for all text-gray-700 elements */
+.text-gray-700 {
+  color: rgba(55, 65, 81, 1) !important; /* text-gray-800 instead */
+  font-weight: 450;
+}
+
+/* Ensure status text is clearly visible */
+.text-sm.text-gray-700 {
+  color: rgba(55, 65, 81, 1) !important;
+  font-weight: 450;
+}
+
+/* Make order details headings more prominent */
+.text-lg.font-medium.text-gray-900 {
+  color: rgba(17, 24, 39, 1) !important;
+  font-weight: 600;
+}
+
+/* Increase contrast for order status indicators */
+.bg-gray-50 p.text-sm {
+  color: rgba(31, 41, 55, 1) !important; /* text-gray-800 */
+  font-weight: 500;
+}
+
+/* Ensure order info elements have good contrast */
+.flex.items-start div p.text-sm.text-gray-700 {
+  color: rgba(75, 85, 99, 1) !important;
+}
+
+.flex.items-start div p.text-gray-700.font-medium,
+.flex.justify-between p.text-gray-700,
+.flex.justify-between p.font-medium {
+  color: rgba(31, 41, 55, 1) !important;
+  font-weight: 500;
+}
+
+/* Make product names clearer */
+h4.text-sm.font-medium.text-gray-900 {
+  color: rgba(17, 24, 39, 1) !important;
+  font-weight: 600;
+}
+
+/* Ensure tracking information is readable */
+.space-y-3 div p.text-gray-700 {
+  color: rgba(55, 65, 81, 1) !important;
+}
+
+/* Fix for status card headers with faded text */
+.bg-gray-50 .flex.items-center span.font-medium,
+.bg-gray-50 .flex.items-center .text-gray-700 {
+  color: rgba(31, 41, 55, 1) !important; /* darker text-gray-800 */
+  font-weight: 600 !important;
+}
+
+/* Enhance contrast for status titles in the order status section */
+.bg-gray-50 .flex.items-center.mb-2 span {
+  color: black !important;
+  font-weight: 600 !important;
+}
+
+/* Fix for status headings like 'Đơn hàng', 'Vận chuyển', etc. */
+.text-gray-700.mr-2,
+.flex.items-center .text-gray-700 {
+  color: rgba(31, 41, 55, 1) !important;
+} 

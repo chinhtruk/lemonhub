@@ -1,0 +1,75 @@
+/* Custom CSS for checkout page */
+
+/* Placeholder styles - faded when empty */
+.dark-placeholder::placeholder {
+  color: rgba(75, 85, 99, 0.9) !important; /* Darker gray for better contrast */
+  font-weight: 450;
+}
+
+/* For Firefox */
+.dark-placeholder::-moz-placeholder {
+  color: rgba(75, 85, 99, 0.9) !important;
+  font-weight: 450;
+  opacity: 1;
+}
+
+/* For Edge */
+.dark-placeholder::-ms-input-placeholder {
+  color: rgba(75, 85, 99, 0.9) !important;
+  font-weight: 450;
+}
+
+/* For Chrome, Safari, and Opera */
+.dark-placeholder::-webkit-input-placeholder {
+  color: rgba(75, 85, 99, 0.9) !important;
+  font-weight: 450;
+}
+
+/* Make input text darker when typed */
+.dark-placeholder {
+  color: rgba(17, 24, 39, 1) !important; /* text-gray-900 for darker text when typed */
+  font-weight: 500;
+}
+
+/* Style for select elements */
+select {
+  color: rgba(17, 24, 39, 1) !important; /* Darker text for selected value */
+  font-weight: 500;
+}
+
+/* Style for the placeholder option in selects */
+select option:first-child {
+  color: rgba(75, 85, 99, 0.9) !important; /* Darker text for placeholder */
+  font-weight: 450;
+}
+
+/* Style for actual select options */
+select option:not(:first-child) {
+  color: rgba(17, 24, 39, 1) !important; /* Darker text for actual options */
+  font-weight: 500;
+}
+
+/* Make select placeholders darker */
+select option {
+  color: rgba(17, 24, 39, 0.9) !important;
+  font-weight: 500;
+}
+
+/* Improve contrast for order details page */
+.text-gray-500 {
+  color: rgba(55, 65, 81, 1) !important; /* Darker gray-600 instead of gray-500 */
+}
+
+/* Make order status text more visible */
+p.text-sm.text-gray-500, 
+span.text-sm.text-gray-500, 
+div.text-sm.text-gray-500 {
+  color: rgba(55, 65, 81, 1) !important; /* Darker gray for better readability */
+  font-weight: 450;
+}
+
+/* Ensure payment method descriptions are readable */
+.pl-8 p.text-sm.text-gray-500 {
+  color: rgba(55, 65, 81, 1) !important;
+  font-weight: 450;
+} 

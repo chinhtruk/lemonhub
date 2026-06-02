@@ -1,0 +1,7 @@
+<!-- This file will be replaced with a real image. This is just a placeholder -->
+<svg width="1200" height="400" viewBox="0 0 1200 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="400" fill="#f3f4f6"/>
+  <rect x="0" y="0" width="1200" height="400" fill="#f0f0f0"/>
+  <text x="600" y="200" font-family="Arial" font-size="36" text-anchor="middle" fill="#888888">Banner Image Placeholder</text>
+  <text x="600" y="250" font-family="Arial" font-size="18" text-anchor="middle" fill="#888888">The banner image could not be loaded</text>
+</svg> 

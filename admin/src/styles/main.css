@@ -1,0 +1,553 @@
+/* Main.css - Global styles for LemonHub Admin */
+
+/* Basic Reset and Global Styles */
+:root {
+  --primary-color: #FFC107;
+  --primary-light: #FFEB3B;
+  --primary-dark: #FFA000;
+  --text-primary: #333333;
+  --text-secondary: #555555;
+  --light-gray: #f5f5f5;
+  --border-color: rgba(0, 0, 0, 0.08);
+  --success-color: #4CAF50;
+  --danger-color: #F44336;
+  --warning-color: #FF9800;
+  --info-color: #2196F3;
+  --secondary-color: #757575;
+  --box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  --transition: all 0.2s ease;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: var(--text-primary);
+  background-color: #f8f9fa;
+  line-height: 1.5;
+}
+
+/* Admin Layout Structure */
+.admin-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.main-wrapper {
+  flex: 1;
+  min-height: calc(100vh - 56px);
+  margin-top: 56px;
+}
+
+.content-wrapper {
+  flex-grow: 1;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #f8f9fa;
+  transition: var(--transition);
+}
+
+/* Page title styles */
+.page-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+/* Auth Page */
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #ffffff 0%, #f5f5f5 100%);
+}
+
+/* Cards & Containers */
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+  transition: var(--transition);
+}
+
+.card:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.card-header {
+  background-color: #fff;
+  border-bottom: 1px solid var(--border-color);
+  padding: 1rem 1.25rem;
+}
+
+.section-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: var(--text-primary);
+}
+
+/* Buttons & Actions */
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+
+.btn-outline-primary {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.btn {
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.btn-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-icon svg {
+  margin-right: 0.5rem;
+}
+
+/* Tables */
+.table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.table th {
+  background-color: #f9f9f9;
+  font-weight: 600;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 0.75rem 1rem;
+}
+
+.table tr {
+  box-shadow: inset 0 -1px 0 var(--border-color);
+  transition: var(--transition);
+}
+
+.table tr:hover {
+  background-color: rgba(0, 0, 0, 0.01);
+}
+
+.table td {
+  vertical-align: middle;
+  padding: 0.75rem 1rem;
+}
+
+/* Product table specific */
+.product-table .product-name {
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.product-table .product-brand {
+  font-size: 0.8rem;
+}
+
+/* Order table specific */
+.order-table .order-id {
+  font-weight: 500;
+}
+
+/* User table specific */
+.user-table .user-row:hover {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+/* Banner table specific */
+.banner-table .banner-row:hover {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+/* Forms */
+.form-control, .form-select {
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  padding: 0.5rem 0.75rem;
+  font-size: 0.9rem;
+  box-shadow: none;
+  transition: var(--transition);
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: rgba(255, 193, 7, 0.4);
+  box-shadow: 0 0 0 3px rgba(255, 193, 7, 0.1);
+}
+
+.form-label {
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-secondary);
+}
+
+/* Badges */
+.badge {
+  font-weight: 500;
+  padding: 0.35rem 0.75rem;
+  border-radius: 50rem;
+  font-size: 0.75rem;
+}
+
+.badge-success {
+  background-color: rgba(76, 175, 80, 0.1);
+  color: var(--success-color);
+  border: 1px solid rgba(76, 175, 80, 0.2);
+}
+
+.badge-danger {
+  background-color: rgba(244, 67, 54, 0.1);
+  color: var(--danger-color);
+  border: 1px solid rgba(244, 67, 54, 0.2);
+}
+
+.badge-warning {
+  background-color: rgba(255, 152, 0, 0.1);
+  color: var(--warning-color);
+  border: 1px solid rgba(255, 152, 0, 0.2);
+}
+
+.badge-info {
+  background-color: rgba(33, 150, 243, 0.1);
+  color: var(--info-color);
+  border: 1px solid rgba(33, 150, 243, 0.2);
+}
+
+.badge-primary {
+  background-color: rgba(33, 150, 243, 0.1);
+  color: var(--info-color);
+  border: 1px solid rgba(33, 150, 243, 0.2);
+}
+
+.badge-secondary {
+  background-color: rgba(117, 117, 117, 0.1);
+  color: var(--secondary-color);
+  border: 1px solid rgba(117, 117, 117, 0.2);
+}
+
+/* Status indicators */
+.status-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+.status-dot.active {
+  background-color: var(--success-color);
+}
+
+.status-dot.inactive {
+  background-color: var(--danger-color);
+}
+
+.status-dot.pending {
+  background-color: var(--warning-color);
+}
+
+/* Utility classes */
+.shadow-sm {
+  box-shadow: var(--box-shadow) !important;
+}
+
+.rounded-lg {
+  border-radius: 8px !important;
+}
+
+.border-light {
+  border-color: var(--border-color) !important;
+}
+
+.text-primary {
+  color: var(--primary-color) !important;
+}
+
+.bg-primary-light {
+  background-color: rgba(255, 193, 7, 0.1) !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .sidebar {
+    position: fixed;
+    z-index: 1050;
+    width: 250px;
+    left: -250px;
+    transition: left 0.3s ease;
+  }
+  
+  .sidebar.show {
+    left: 0;
+  }
+  
+  .content-wrapper {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.slide-up {
+  animation: slideUp 0.4s ease-out;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.pulse {
+  animation: pulse 1.5s infinite;
+}
+
+/* Dashboard widgets */
+.dashboard-widget {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1.25rem;
+  box-shadow: var(--box-shadow);
+  height: 100%;
+  transition: var(--transition);
+}
+
+.dashboard-widget:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.05);
+}
+
+.dashboard-widget-title {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.75rem;
+}
+
+.dashboard-widget-value {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.dashboard-widget-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Charts and data visualization */
+.chart-container {
+  height: 300px;
+  margin-bottom: 1rem;
+}
+
+/* User avatar styles */
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f1f1;
+  overflow: hidden;
+}
+
+.user-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Product image styles */
+.product-image {
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #f8f9fa;
+}
+
+/* Empty state */
+.empty-state {
+  text-align: center;
+  padding: 2rem;
+}
+
+.empty-state-icon {
+  font-size: 3rem;
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
+.empty-state-text {
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+/* Loader animation override */
+.spinner-border.text-warning {
+  color: var(--primary-color) !important;
+}
+
+/* Modal enhancements */
+.modal-content {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.modal-footer {
+  border-top: 1px solid var(--border-color);
+}
+
+/* Sidebar specific additional styling */
+.sidebar-divider {
+  height: 1px;
+  background-color: var(--border-color);
+  margin: 0.75rem 0;
+}
+
+/* Order status timeline */
+.order-timeline {
+  position: relative;
+  padding-left: 30px;
+}
+
+.order-timeline-item {
+  position: relative;
+  padding-bottom: 1.5rem;
+}
+
+.order-timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -30px;
+  top: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+}
+
+.order-timeline-item::after {
+  content: '';
+  position: absolute;
+  left: -24px;
+  top: 12px;
+  width: 2px;
+  height: calc(100% - 12px);
+  background-color: var(--border-color);
+}
+
+.order-timeline-item:last-child::after {
+  display: none;
+}
+
+/* Flash sale styles */
+.special-date-item {
+  transition: transform 0.2s ease;
+}
+
+.special-date-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Store card styles */
+.store-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.store-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Button variations */
+.btn-warning {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: #fff;
+}
+
+.btn-warning:hover {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+  color: #fff;
+}
+
+/* Scrollbar Customization */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+
+/* Add additional styles for fixed header */
+.navbar.fixed-top {
+  z-index: 1030;
+}
+
+/* Adjust sidebar for fixed header */
+@media (min-width: 992px) {
+  .sidebar {
+    margin-top: 56px;
+    height: calc(100vh - 56px);
+  }
+} 
