@@ -120,4 +120,4 @@ Không commit file `.env` hoặc connection string thật lên GitHub.
 
 ## Tác giả
 
-ChinhTruk 
+Nguyễn Chính Trực
